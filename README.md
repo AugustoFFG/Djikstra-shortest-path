@@ -66,4 +66,21 @@ A entrada é composta pelas seguintes linhas:
 
 4. **Saída**:
    Para cada consulta, o programa imprime o valor da menor distância entre as cidades de origem e destino. Se não houver um caminho disponível, a mensagem `"Nao e possivel entregar a carta"` é impressa.
+   ## Exemplo de Saída
+
+A saída consiste em uma linha para cada consulta. Cada linha mostra o menor tempo (peso) necessário para ir da cidade de origem à cidade de destino. Caso não haja caminho possível entre as cidades, a saída será a mensagem "Nao e possivel entregar a carta".
+
+### Exemplo de Saída para o Exemplo de Entrada:
+
+```plaintext
+0
+6
+6
+0
+Nao e possivel entregar a carta
+
+10
+Nao e possivel entregar a carta
+0
+
 
