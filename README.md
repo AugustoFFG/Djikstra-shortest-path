@@ -24,16 +24,42 @@ O algoritmo lê os dados de entrada, calcula o menor caminho entre as cidades pa
 
 ## Como Funciona
 
-1. **Entrada de Dados**:
-   O programa começa lendo o número de cidades e o número de rotas (arestas). Em seguida, ele lê cada rota, que inclui a cidade de origem, cidade de destino e o peso da rota (tempo de entrega ou distância).
-   N E
-  X Y H
-  ...
-  K
-  O D
-  ...
-  0 0
+## Formato de Entrada
 
+A entrada é composta pelas seguintes linhas:
+
+1. **Primeira linha**: dois inteiros `N` e `E`, representando o número de cidades (vértices) e o número de rotas (arestas) no grafo.
+
+2. **Próximas `E` linhas**: cada linha contém três inteiros `X`, `Y` e `H`, representando uma rota da cidade `X` para a cidade `Y` com peso `H` (tempo de entrega ou distância).
+
+3. **Próxima linha**: um inteiro `K`, representando o número de consultas a serem feitas.
+
+4. **Próximas `K` linhas**: cada linha contém dois inteiros `O` e `D`, representando uma consulta de caminho mais curto entre a cidade `O` (origem) e a cidade `D` (destino).
+
+5. **Última linha**: a linha `0 0` para indicar o final da entrada.
+
+### Exemplo de Entrada:
+
+```plaintext
+4 5
+1 2 5
+2 1 10
+3 4 8
+4 3 7
+2 3 6
+5
+1 2
+1 3
+1 4
+4 3
+4 1
+3 3
+10
+1 3
+3 1
+3 2
+0 0
+```
 
 3. **Processamento de Consultas**:
    Após as rotas serem lidas, o programa aceita um número de consultas, onde para cada consulta, ele encontra o caminho mais curto entre as cidades especificadas, utilizando o algoritmo de Dijkstra.
